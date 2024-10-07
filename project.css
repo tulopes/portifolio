@@ -1,0 +1,249 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%; /* Faz o cabeçalho ocupar a largura total da página */
+    position: fixed; /* Mantém o cabeçalho fixo no topo */
+    background-color: #fefefe;
+    z-index: 1000;
+    top: 0;
+
+    
+   
+}
+
+
+.header-f {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fefefe;
+   
+   
+}
+
+.logo {
+    font-family: 'Montserrat', sans-serif; /* Substitua pela fonte desejada */
+    font-size: 1rem;
+    font-weight: bold;
+    color:#333;
+    margin-left: 40px;
+    
+}
+
+nav {
+    flex-grow: 1; /* Permite que o nav use o espaço disponível */
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none; /* Remove os marcadores de lista */
+    justify-content: center; /* Centraliza os itens */
+}
+
+.nav-menu li {
+    margin: 0 15px; /* Espaçamento entre os itens do menu */
+}
+
+.nav-menu a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #333; /* Cor do texto do menu */
+    font-size: 1.1rem; /* Tamanho da fonte */
+    transition: color 0.3s ease; /* Transição suave ao passar o mouse */
+    margin-left: 10px;
+
+}   
+
+.nav-menu a:hover {
+    color: #0478fd; /* Cor ao passar o mouse */
+}
+
+#link {
+    text-decoration: none;
+    color:#333;
+}
+
+#link:hover {
+   color: #5ea8f4;
+   font-size: 20px;
+}
+
+.btn_1 {
+    display: flex;
+    gap: 10px; /* Espaçamento entre os botões */
+    margin-right: 70px;
+}
+
+.btn-contact {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease; /* Transição suave */
+}
+
+.white {
+    background-color: white;
+    color: #5ea8f4; /* Cor do texto do botão */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ao redor */
+}
+
+.blue {
+    background-color: #0478fd;
+    color: white; /* Cor do texto do botão */
+}
+
+.btn-contact:hover {
+    transform: translateY(-2px); /* Efeito de elevação ao passar o mouse */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Aumenta a sombra ao passar o mouse */
+}
+
+.banner{
+    
+    width: 100%; /* O banner ocupa 100% da largura da tela */
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: rgb(14, 13, 13);
+    flex-direction: column;
+    margin-top: 20px;
+   
+}
+
+.banner h2 {
+    margin-top: 70px;
+    font-size: 2.5rem; /* Tamanho da fonte do parágrafo */
+    
+}
+.banner p {
+    font-size: 1.5rem; /* Tamanho da fonte do parágrafo */
+    margin: 0; /* Remove margens padrão */
+    padding: 10px; /* Espaçamento interno do parágrafo */
+    border-radius: 5px; /* Bordas arredondadas */
+    text-align: center;
+    width: 700px;
+    color:  #555;
+    font-size: 18px;
+}
+
+/* Centraliza a seção e define margens laterais */
+.meus-projetos {
+    background-color: #fefefe;  /* Fundo preto */
+    padding: 50px 20px;  /* Padding para espaçamento interno */
+    text-align: center;  /* Centraliza o texto */
+    max-width: 100%;  /* Largura máxima da seção */
+    margin: 0 auto;  /* Centraliza a seção na página */
+}
+
+/* Título e Parágrafo */
+.meus-projetos h1 {
+    font-size: 36px;
+    margin-bottom: 20px;  /* Espaçamento entre o título e o parágrafo */
+}
+
+.meus-projetos p {
+    margin-left: 30%;
+    margin-right: 30%;
+    font-size: 18px;
+    margin-bottom: 40px;
+    text-align: center; 
+}
+.conteiner{
+    
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+/* Grade de imagens centralizada com margem */
+.projetos-imagens {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* 3 colunas */
+    grid-gap: 20px;  /* Espaçamento entre as imagens */
+    justify-items: center;  /* Centraliza as imagens nas colunas */
+    padding: 0 20px;  /* Margens laterais internas */
+    margin: 0 auto;  /* Centraliza as imagens na seção */
+}
+
+/* Estilizando as imagens */
+.projetos-imagens img {
+    max-width: 100%;  /* Faz as imagens se ajustarem ao contêiner */
+    height: auto;  /* Preserva a proporção da imagem */
+    border-radius: 8px;  /* Bordas arredondadas para um visual mais elegante */
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    .projetos-imagens {
+        grid-template-columns: repeat(2, 1fr);  /* 2 colunas em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .projetos-imagens {
+        grid-template-columns: 1fr;  /* 1 coluna em telas muito pequenas */
+    }
+}
+
+
+.cabecalho{
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-between;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    
+}
+
+.linha {
+    margin-left: 50px;
+    margin-right: 50px;
+    border: none; /* Remove a borda padrão */
+    border-top: 1px solid #000; /* Cria uma linha superior */
+    width: 90%; /* Define a largura da linha */
+    
+}
+    
+
+.cabecalho ul{
+    margin-left: 100px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+    margin-right: 100px;
+}
+
+.social-icons a {
+    font-size: 20px;
+    color: #000; /* Cor preta para os ícones */
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #007bff; /* Muda a cor ao passar o mouse */
+}
+
+.footer-final{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 30px;
+}
+
+.casal{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+   
+}
+#par{
+    width: 30%;
+    margin-left: 150px;
+}
+
