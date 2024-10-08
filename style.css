@@ -154,7 +154,7 @@ button {
 
 
 .banner{
-    background-image: url(../imagem/fot.jpg);
+    background-image: url(imagem/fot.jpg);
     background-size: cover; /* A imagem cobrirá toda a área do banner */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Impede que a imagem se repita */
